@@ -81,14 +81,27 @@
       transition: background 0.25s ease, box-shadow 0.25s ease;
     }
 
+    .page-header {
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--border);
+      transition: border-color 0.25s ease;
+    }
+
     h1 {
       font-size: 1.75rem;
       font-weight: 600;
       color: var(--text-primary);
-      margin-bottom: 1.25rem;
-      padding-bottom: 0.75rem;
-      border-bottom: 2px solid var(--border);
-      transition: color 0.25s ease, border-color 0.25s ease;
+      margin-bottom: 0.35rem;
+      transition: color 0.25s ease;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: var(--text-body);
+      letter-spacing: 0.02em;
+      margin-bottom: 0;
     }
 
     p {
@@ -148,7 +161,10 @@
   </button>
 
   <main>
-    <h1>王现永的学习日志</h1>
+    <header class="page-header">
+      <h1>王现永的学习日志</h1>
+      <p class="subtitle">Wang Xianyong's Learning Log</p>
+    </header>
     <p>
       我是去哪儿酒店产品经理，正在学编程。用代码记录成长，一步一步把想法变成能跑的东西。
     </p>
